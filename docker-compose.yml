@@ -1,0 +1,10 @@
+web:
+  restart: always
+  build: ./nginx
+  ports:
+    - "80:80"
+  links:
+    - couchdb 
+
+couchdb:
+  image: couchdb
