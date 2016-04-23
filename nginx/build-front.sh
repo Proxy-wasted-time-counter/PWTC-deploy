@@ -4,3 +4,4 @@ rm -rf temp
 
 docker run --rm -v `pwd`/app:/opt/app -w /opt/app node npm install
 docker run --rm -v `pwd`/app:/opt/app -w /opt/app node npm run build release
+chmod -R a+r app/build
